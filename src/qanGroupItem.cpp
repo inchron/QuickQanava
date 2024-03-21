@@ -267,6 +267,11 @@ void    GroupItem::mousePressEvent(QMouseEvent* event)
         if (getGraph())
             getGraph()->selectGroup(*getGroup(), event->modifiers());
     }
+}
+
+void    GroupItem::mouseReleaseEvent(QMouseEvent* event)
+{
+    qan::NodeItem::mouseReleaseEvent(event);
 
     if (event->button() == Qt::LeftButton)
         emit groupClicked(this, event->localPos());
