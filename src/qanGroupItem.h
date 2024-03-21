@@ -163,6 +163,7 @@ signals:
 protected:
     virtual void    mouseDoubleClickEvent(QMouseEvent* event ) override;
     virtual void    mousePressEvent(QMouseEvent* event ) override;
+    virtual void    mouseReleaseEvent(QMouseEvent* event ) override;
 
 signals:
     //! Emitted whenever the group is clicked (even at the start of a dragging operation).
