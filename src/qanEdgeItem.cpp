@@ -1239,7 +1239,7 @@ void    EdgeItem::setStyle(EdgeStyle* style) noexcept
                     this,      &EdgeItem::styleModified);
         }
         emit styleChanged();
-        updateItem();   // Force initial style settings
+        styleModified();   // Force initial style settings
     }
 }
 
