@@ -42,6 +42,14 @@ namespace qan { // ::qan
 class Graph;
 class TableGroup;
 class NodeItem;
+}
+
+#ifndef OPAQUE_TableGroup
+#define OPAQUE_TableGroup
+Q_DECLARE_OPAQUE_POINTER(qan::TableGroup*)
+#endif
+
+namespace qan {
 
 class TableCell : public QQuickItem
 {
